@@ -31,6 +31,8 @@ document.addEventListener("DOMContentLoaded", function () {
               "AI와 디지털 기술을 핵심 경쟁력으로 삼아 데이터 기반의 의사결정 체계를 고도화하고 있습니다. 공정 전반에 AI를 적용하여 공정 최적화 및 안전 혁신 등을 이루고, 다양한 디지털 툴을 활용해 AI 중심의 지능형 조직으로 도약하고 있습니다.",
 
             "videos.deepJourney": "Deep Transformation Journey",
+            "videos.deepJourney.content":
+              "화면을 좌측으로 넘겨 GS칼텍스의 가치를 경험하세요.",
             "videos.futurePlus.title": "Future Plus",
             "videos.futurePlus.description":
               "고객 경험 혁신을 위한 새로운 시도<br />GS칼텍스의 미래형 주유소 프로토타입",
@@ -105,6 +107,13 @@ document.addEventListener("DOMContentLoaded", function () {
             "history.item18":
               "바이오 항공유 상업 수출 개시 및 CORSIA 인증 획득",
             "history.item19": "사내 생성형 AI 통합 플랫폼 'AIU' 도입",
+
+            "merchandise.description": "임직원 안전 피규어",
+            "merchandise.content":
+              "GS칼텍스는 안전을 중시하는 'Safety First' 조직 문화를 보유하고 있습니다. 'Step Together' 캠페인은 GS칼텍스 임직원이 함께 참여해 안전사고를 예방하고, 안전의식을 높이기 위한 활동으로 임직원 한 명 한 명, 모두가 항상 안전을 중시하자는 의미를 담고자 임직원 안전 피규어 굿즈를 제작했습니다.",
+
+            "ccus.content":
+              "'가스로 배우는 탄소포집, CCUS KIT'는 탄소저감 교육을 위한 굿즈로 GS칼텍스의 저탄소 사업인 CCUS(탄소 포집·활용·저장)를 아이들이 쉽고 재미있게 이해할 수 있도록 만든 크리에이티브 놀이 키트입니다. 탄소 포집의 과정을 누구나 한 번쯤 해본 '방귀 잡기' 놀이에 빗대어, CCUS의 중요성을 즐겁게 놀면서 배울 수 있도록 구성되었습니다.",
           },
         },
         en: {
@@ -131,6 +140,8 @@ document.addEventListener("DOMContentLoaded", function () {
               "By making AI and digital technologies our core competitive strengths, GS Caltex is enhancing data-based decision-making systems. We are applying AI across our operations to optimize processes and enable safety innovation, while leveraging digital tools to evolve into an AI-centered intelligent organization.",
 
             "videos.deepJourney": "Deep Transformation Journey",
+            "videos.deepJourney.content":
+              "Swipe left to experience the values of GS Caltex.",
             "videos.futurePlus.title": "Future Plus",
             "videos.futurePlus.description":
               "Pioneering Customer Experience Innovation<br />The GS Caltex Prototype for the Fueling Station of the Future",
@@ -216,6 +227,13 @@ document.addEventListener("DOMContentLoaded", function () {
             "history.item18":
               "Commercial export of sustainable aviation fuel and CORSIA certification",
             "history.item19": "Launch of companywide AI platform 'AIU'",
+
+            "merchandise.description": "Employee Safety Figurine",
+            "merchandise.content":
+              "‘Safety First’ is a core part of GS Caltex’s organizational culture. Employees participate in the Step Together campaign to prevent safety incidents and raise awareness. The Employee Safety Figurine was created to represent the belief that every employee should always prioritize safety. Employees participate in the Step Together campaign to prevent safety incidents and raise awareness. The Employee Safety Figurine was created as part of the campaign to represent the belief that every employee should always prioritize safety.",
+
+            "ccus.content":
+              "The CCUS Kit is an interactive learning kit designed to help children learn about carbon reduction. It offers a creative and easy way to understand CCUS (Carbon Capture, Utilization, and Storage), which is part of GS Caltex’s lower-carbon business. Inspired by a childhood game many Koreans grew up with, the kit makes it fun to learn about the importance of CCUS.",
           },
         },
       },
