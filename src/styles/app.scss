@@ -29,8 +29,7 @@ $maxWidth: 1440px;
   }
 }
 .panel {
-  min-height: 100vh;
-  height: auto;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
