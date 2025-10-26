@@ -649,20 +649,39 @@
           const scrollBox = document.querySelector(".history-scroll");
           if (!scrollBox) return;
 
-          // 휠: 최상단에서만 이전 섹션 이동 (임계값 적용)
+          // 휠 이벤트: 상단/하단 끝에서 섹션 이동
           let wheelAccumulator = 0;
           scrollBox.addEventListener(
             "wheel",
             function (e) {
-              if (e.deltaY < 0 && scrollBox.scrollTop <= 0) {
+              const isAtTop = scrollBox.scrollTop <= 0;
+              const isAtBottom =
+                scrollBox.scrollTop >=
+                scrollBox.scrollHeight - scrollBox.clientHeight - 5; // 5px 여유
+
+              // 위로 스크롤하면서 최상단에 있을 때
+              if (e.deltaY < 0 && isAtTop) {
                 wheelAccumulator += Math.abs(e.deltaY);
                 if (wheelAccumulator >= 150) {
                   e.preventDefault();
                   e.stopPropagation();
-                  wheelAccumulator = 0; // 리셋
-                  // 현재 인덱스에서 한 칸 위로
+                  wheelAccumulator = 0;
                   const prev = Math.max(0, $.scrollify.currentIndex() - 1);
                   $.scrollify.move(prev);
+                }
+              }
+              // 아래로 스크롤하면서 최하단에 있을 때
+              else if (e.deltaY > 0 && isAtBottom) {
+                wheelAccumulator += Math.abs(e.deltaY);
+                if (wheelAccumulator >= 150) {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  wheelAccumulator = 0;
+                  const next = Math.min(
+                    $.scrollify.sections().length - 1,
+                    $.scrollify.currentIndex() + 1
+                  );
+                  $.scrollify.move(next);
                 }
               } else {
                 wheelAccumulator = 0; // 다른 방향 스크롤 시 리셋
@@ -671,7 +690,7 @@
             { passive: false }
           );
 
-          // 터치(모바일): 위로 스와이프 최상단이면 이전 섹션
+          // 터치 이벤트: 상단/하단 끝에서 섹션 이동
           let startY = 0;
           scrollBox.addEventListener(
             "touchstart",
@@ -686,9 +705,23 @@
             function (e) {
               const endY = e.changedTouches[0].clientY;
               const diffY = startY - endY;
-              if (diffY < -50 && scrollBox.scrollTop <= 0) {
+              const isAtTop = scrollBox.scrollTop <= 0;
+              const isAtBottom =
+                scrollBox.scrollTop >=
+                scrollBox.scrollHeight - scrollBox.clientHeight - 5;
+
+              // 위로 스와이프하면서 최상단에 있을 때
+              if (diffY < -50 && isAtTop) {
                 const prev = Math.max(0, $.scrollify.currentIndex() - 1);
                 $.scrollify.move(prev);
+              }
+              // 아래로 스와이프하면서 최하단에 있을 때
+              else if (diffY > 50 && isAtBottom) {
+                const next = Math.min(
+                  $.scrollify.sections().length - 1,
+                  $.scrollify.currentIndex() + 1
+                );
+                $.scrollify.move(next);
               }
             },
             { passive: true }
