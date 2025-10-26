@@ -83,16 +83,26 @@ $maxWidth: 1440px;
       padding-top: 20vh;
       padding-bottom: 10vh;
       text-align: center;
+      @media (max-width: 768px) {
+        padding-top: 15vh;
+        padding-bottom: 0;
+      }
       dt {
         padding-bottom: 20px;
         font-size: clamp(24px, 4vw, 28px);
         font-weight: bold;
+        @media (max-width: 768px) {
+          padding-bottom: 10px;
+        }
       }
       dd {
         margin: 0 auto;
         width: clamp(300px, 50vw, 720px);
         font-size: clamp(14px, 1.5vw, 16px);
         line-height: 1.6;
+        @media (max-width: 768px) {
+          line-height: 1.3;
+        }
       }
     }
     .list {
@@ -126,8 +136,9 @@ $maxWidth: 1440px;
           border-radius: 10px;
           color: #11202f;
           background-color: #2fe0a8;
-          @media (max-width: 600px) {
-            padding: 30px;
+          @media (max-width: 768px) {
+            padding: 25px 20px 20px 20px;
+            height: 300px;
           }
 
           &::before {
@@ -139,6 +150,10 @@ $maxWidth: 1440px;
             height: clamp(60px, 10vw, 70px);
             background: url(../images/ico_dax.svg) no-repeat center center /
               contain;
+            @media (max-width: 768px) {
+              top: 20px;
+              right: 22px;
+            }
           }
 
           p {
@@ -164,6 +179,10 @@ $maxWidth: 1440px;
             dd {
               font-size: 13px;
               line-height: 1.4;
+
+              @media (max-width: 768px) {
+                line-height: 1.2;
+              }
             }
           }
         }
@@ -268,10 +287,20 @@ $maxWidth: 1440px;
       @media (max-width: 768px) {
         .swiper-slide {
           padding: 20px 0;
+          p {
+            margin-bottom: 15px;
+          }
           dl {
+            dt {
+              font-size: 14px;
+              line-height: 1.2;
+              margin-bottom: 10px;
+            }
             dd {
               padding-left: 20px;
               padding-right: 20px;
+              font-size: 13px;
+              line-height: 1.2;
             }
           }
         }
@@ -334,7 +363,6 @@ $maxWidth: 1440px;
           height: 100%;
           object-fit: cover;
           transition: transform 0.3s ease;
-
           &:hover {
             transform: scale(1.05);
           }
@@ -348,6 +376,10 @@ $maxWidth: 1440px;
         grid-template-columns: repeat(3, 1fr);
         gap: 8px;
         padding: 20px 15px;
+
+        li {
+          aspect-ratio: 1.2;
+        }
       }
     }
 

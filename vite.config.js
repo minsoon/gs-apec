@@ -5,6 +5,7 @@ export default defineConfig({
   server: {
     port: 3000,
     open: true,
+    host: true, // 네트워크에서 접근 가능하도록 설정
   },
 
   // 빌드 설정
