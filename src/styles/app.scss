@@ -574,6 +574,20 @@ $maxWidth: 1440px;
         letter-spacing: 0.02em;
       }
     }
+    @media (max-width: 768px) {
+      p {
+        padding: 0 40px;
+        img {
+          width: 50%;
+        }
+      }
+      dl {
+        padding-top: 20px;
+        dd {
+          line-height: 1.2;
+        }
+      }
+    }
   }
 
   .ccusCon {
@@ -620,6 +634,17 @@ $maxWidth: 1440px;
         word-break: keep-all;
         word-spacing: 0.1em;
         letter-spacing: 0.02em;
+      }
+    }
+    @media (max-width: 768px) {
+      p {
+        padding: 0 40px;
+      }
+      dl {
+        padding-top: 20px;
+        dd {
+          line-height: 1.2;
+        }
       }
     }
   }
