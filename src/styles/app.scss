@@ -41,6 +41,11 @@ $maxWidth: 1440px;
     justify-content: flex-start;
   }
 }
+.panel[data-section-name="video"] {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 
 .container {
   .mainCon {
@@ -219,6 +224,7 @@ $maxWidth: 1440px;
   }
 
   .videoBox {
+    padding-top: 5vh;
     width: 100%;
     margin: 0 auto;
 
