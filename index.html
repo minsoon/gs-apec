@@ -40,6 +40,9 @@
               <img src="./src/images/img_gecaltex.svg" alt="GS Caltex" />
               <img src="./src/images/img_apec.svg" alt="APEC" />
             </p>
+            <div class="scrollIcon">
+              <img src="./src/images/ico_scroll.png" alt="scroll" />
+            </div>
           </div>
         </div>
 
@@ -62,6 +65,22 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="card">
+                      <p>BX <span>Business Transformation</span></p>
+                      <dl>
+                        <dt data-i18n="deepTransformation.bx.title">
+                          Value Chain 전반의 일하는 방식 변화
+                        </dt>
+                        <dd data-i18n="deepTransformation.bx.description">
+                          정유, 석유화학, 윤활유 등 기존 사업의 Value Chain
+                          전반에서 체질을 근본적으로 개선하고 수익성을 강화하고
+                          있습니다. 또한, 이를 달성하기 위해 일하는 방식의
+                          변화를 통해 지속가능한 혁신을 실현해 나가고 있습니다.
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
                       <p>DAX <span>Digital & AI Transformation</span></p>
                       <dl>
                         <dt data-i18n="deepTransformation.dax.title">
@@ -73,22 +92,6 @@
                           적용하여 공정 최적화 및 안전 혁신 등을 이루고, 다양한
                           디지털 툴을 활용해 AI 중심의 지능형 조직으로 도약하고
                           있습니다.
-                        </dd>
-                      </dl>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="card">
-                      <p>BX <span>Business Transformation</span></p>
-                      <dl>
-                        <dt data-i18n="deepTransformation.bx.title">
-                          Value Chain 전반의 일하는 방식 변화
-                        </dt>
-                        <dd data-i18n="deepTransformation.bx.description">
-                          정유, 석유화학, 윤활유 등 기존 사업의 Value Chain
-                          전반에서 체질을 근본적으로 개선하고 수익성을 강화하고
-                          있습니다. 또한, 이를 달성하기 위해 일하는 방식의
-                          변화를 통해 지속가능한 혁신을 실현해 나가고 있습니다.
                         </dd>
                       </dl>
                     </div>
@@ -135,23 +138,23 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <p data-i18n="videos.futurePlus.title">Future Plus</p>
+                  <p data-i18n="videos.energyForLife.title">
+                    Energy for Sustainable Life
+                  </p>
                   <div class="video">
-                    <video controls poster="./src/images/img_thumbnail1.jpeg">
+                    <video controls poster="./src/images/img_thumbnail3.jpeg">
                       <source
-                        src="./src/videos/01_FuturePlus.mp4"
+                        src="./src/videos/03_EnergyForSustainableLife.mp4"
                         type="video/mp4"
                       />
                     </video>
                   </div>
                   <dl>
-                    <dt data-i18n="videos.futurePlus.description">
-                      고객 경험 혁신을 위한 새로운 시도 GS칼텍스의 미래형 주유소
-                      프로토타입
+                    <dt data-i18n="videos.energyForLife.description">
+                      GS칼텍스 Legacy & New Energy
                     </dt>
-                    <dd data-i18n="videos.futurePlus.content">
-                      GS칼텍스는 기존의 획일화된 주유소 형태와 서비스에서
-                      벗어나…
+                    <dd data-i18n="videos.energyForLife.content">
+                      1967년 대한민국 최초의 민간 정유사로…
                     </dd>
                   </dl>
                 </div>
@@ -171,24 +174,25 @@
                     </dd>
                   </dl>
                 </div>
+
                 <div class="swiper-slide">
-                  <p data-i18n="videos.energyForLife.title">
-                    Energy for Sustainable Life
-                  </p>
+                  <p data-i18n="videos.futurePlus.title">Future Plus</p>
                   <div class="video">
-                    <video controls poster="./src/images/img_thumbnail3.jpeg">
+                    <video controls poster="./src/images/img_thumbnail1.jpeg">
                       <source
-                        src="./src/videos/03_EnergyForSustainableLife.mp4"
+                        src="./src/videos/01_FuturePlus.mp4"
                         type="video/mp4"
                       />
                     </video>
                   </div>
                   <dl>
-                    <dt data-i18n="videos.energyForLife.description">
-                      GS칼텍스 Legacy & New Energy
+                    <dt data-i18n="videos.futurePlus.description">
+                      고객 경험 혁신을 위한 새로운 시도 GS칼텍스의 미래형 주유소
+                      프로토타입
                     </dt>
-                    <dd data-i18n="videos.energyForLife.content">
-                      1967년 대한민국 최초의 민간 정유사로…
+                    <dd data-i18n="videos.futurePlus.content">
+                      GS칼텍스는 기존의 획일화된 주유소 형태와 서비스에서
+                      벗어나…
                     </dd>
                   </dl>
                 </div>
@@ -584,7 +588,7 @@
             easing: "easeOutExpo",
             scrollSpeed: 1100,
             scrollbars: true,
-            setHeights: true,
+            // setHeights: true,
             overflowScroll: true,
             updateHash: true,
             touchScroll: true,
@@ -625,6 +629,7 @@
             touchStartPreventDefault: true,
             touchMoveStopPropagation: true,
           });
+          transformationSwiper.mousewheel.disable();
         }
 
         function initVideoSwiper() {
@@ -656,6 +661,7 @@
             touchStartPreventDefault: true,
             touchMoveStopPropagation: true,
           });
+          videoSwiper.mousewheel.disable();
         }
 
         function initSwipersWhenReady() {
