@@ -598,25 +598,27 @@
 
     <script type="text/javascript">
       $(document).ready(function () {
-        // Scrollify 초기화
-        $.scrollify({
-          section: ".panel",
-          sectionName: "section-name",
-          interstitialSection: "",
-          easing: "easeOutExpo",
-          scrollSpeed: 1100,
-          offset: 0,
-          scrollbars: true,
-          standardScrollElements: "",
-          setHeights: true,
-          overflowScroll: true,
-          updateHash: true,
-          touchScroll: true,
-          before: function () {},
-          after: function () {},
-          afterResize: function () {},
-          afterRender: function () {},
-        });
+        // 페이지 로드 후 잠시 기다렸다가 Scrollify 초기화
+        setTimeout(function () {
+          $.scrollify({
+            section: ".panel",
+            sectionName: "section-name",
+            interstitialSection: "",
+            easing: "easeOutExpo",
+            scrollSpeed: 1100,
+            offset: 0,
+            scrollbars: true,
+            standardScrollElements: "",
+            setHeights: true,
+            overflowScroll: true,
+            updateHash: true,
+            touchScroll: true,
+            before: function () {},
+            after: function () {},
+            afterResize: function () {},
+            afterRender: function () {},
+          });
+        }, 500); // 0.5초 후 초기화
 
         // Swiper 초기화
         let transformationSwiper = null;
