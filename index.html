@@ -614,11 +614,16 @@
                 spaceBetween: 18,
                 centeredSlides: false,
                 allowTouchMove: false,
-                allowSlideNext: false,
-                allowSlidePrev: false,
               },
             },
             keyboard: { enabled: true },
+            mousewheel: {
+              forceToAxis: true, // 스와이퍼의 축(가로)에 맞는 휠만 반응
+              releaseOnEdges: true, // 양 끝에서 브라우저/부모로 스크롤 넘김
+              // invert: false  // 필요 없으면 삭제해도 됩니다
+            },
+            touchStartPreventDefault: true,
+            touchMoveStopPropagation: true,
           });
         }
 
@@ -642,11 +647,14 @@
                 slidesOffsetAfter: 0,
               },
             },
-            touchRatio: 1,
-            touchAngle: 45,
-            grabCursor: true,
             keyboard: { enabled: true },
-            mousewheel: { invert: false },
+            mousewheel: {
+              forceToAxis: true, // 스와이퍼의 축(가로)에 맞는 휠만 반응
+              releaseOnEdges: true, // 양 끝에서 브라우저/부모로 스크롤 넘김
+              // invert: false  // 필요 없으면 삭제해도 됩니다
+            },
+            touchStartPreventDefault: true,
+            touchMoveStopPropagation: true,
           });
         }
 
