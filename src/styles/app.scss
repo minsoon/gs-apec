@@ -135,7 +135,7 @@ $maxWidth: 1440px;
 
         .card {
           position: relative;
-          padding: 40px;
+          padding: 40px 40px 20px 40px;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
@@ -503,6 +503,40 @@ $maxWidth: 1440px;
           display: inline-block;
           color: #1bd4b4;
         }
+      }
+    }
+
+    @media (max-width: 768px) {
+      .title {
+        // padding-top: 5vh;
+      }
+      ul {
+        li {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .merchandiseCon {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #d9ccbe;
+    .title {
+      padding-top: 3vh;
+      padding-bottom: 3vh;
+      width: 100%;
+      font-size: clamp(24px, 4vw, 28px);
+      font-weight: bold;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      img {
+        width: 100%;
+        max-width: 1440px;
+        object-fit: contain;
       }
     }
 

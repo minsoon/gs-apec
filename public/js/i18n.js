@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ko: {
           translation: {
             "header.title": "GS Caltex. APEC 2025",
-            "main.title": "ENERGY FOR SUSTAINABLE LIFE",
+            "main.title": "Energy for Sustainable Life",
             "main.description":
               "GS칼텍스는 대한민국 최초 민간 정유사로 출발해 앞선 기술과 차별화된 품질로 전 세계 50개국에 정유, 석유화학, 윤활유 등의 제품을 수출하고 있습니다. 또한 미래 환경 변화에 대응하기 위해 디지털 및 AI 기술을 적극적으로 적용하고 저탄소 신사업을 강화하며 지속가능한 미래를 위한 여정을 이어가고 있습니다.",
 
@@ -50,10 +50,10 @@ document.addEventListener("DOMContentLoaded", function () {
             "gallery.item1": "GS타워",
             "gallery.item2": "여수 제2공장 정경",
             "gallery.item3": "미래형 주유소",
-            "gallery.item4": "VR/AR 안전교육",
-            "gallery.item5": "공장 전경사진",
+            "gallery.item4": "VR-AR 안전교육",
+            "gallery.item5": "여수공장 전경",
             "gallery.item6": "내곡 스마트 MFC",
-            "gallery.item7": "직접액체냉각유체",
+            "gallery.item7": "직접액체냉각유",
             "gallery.item8": "바이오선박유 공급",
             "gallery.item9": "GS칼텍스 예울마루",
             "gallery.item10": "에너지플러스허브 달맞이",
@@ -71,14 +71,15 @@ document.addEventListener("DOMContentLoaded", function () {
             "award.item4": "산업통산자원부 AI 자율제조 부문 표창",
             "award.item5": "메세나대상, 대통령 표창",
 
-            "awardNew.title": "New Award",
-            "awardNew.item1":
+            "merchandise.title": "CCUS Kit",
+            "merchandise.item1":
               "한국에서 가장 존경받는 기업조사 뉴에너지 부문 1위",
-            "awardNew.item2":
+            "merchandise.item2":
               "국가고객만족도 17년 연속 주유소 부문 1위(2009~2025)",
-            "awardNew.item3": "에너지플러스앱 글로벌 디자인 어워드 6관왕 수상",
-            "awardNew.item4": "산업통산자원부 AI 자율제조 부문 표창",
-            "awardNew.item5": "메세나대상, 대통령 표창",
+            "merchandise.item3":
+              "에너지플러스앱 글로벌 디자인 어워드 6관왕 수상",
+            "merchandise.item4": "산업통산자원부 AI 자율제조 부문 표창",
+            "merchandise.item5": "메세나대상, 대통령 표창",
 
             "history.title": "History",
             "history.item1": "미국 칼텍스사와합작투자계약 체결",
@@ -109,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: {
           translation: {
             "header.title": "GS Caltex. APEC 2025",
-            "main.title": "ENERGY FOR SUSTAINABLE LIFE",
+            "main.title": "Energy for Sustainable Life",
             "main.description":
               "Established as Korea’s first private oil company, GS Caltex now exports petroleum, petrochemicals, lubricants, and other products to 50 countries based on our advanced technology and differentiated quality. To meet the challenges of a changing environment, we are proactively adopting digital and AI technologies and developing new lower-carbon businesses as we continue our journey toward a sustainable future.",
 
@@ -121,9 +122,9 @@ document.addEventListener("DOMContentLoaded", function () {
             "deepTransformation.bx.description":
               "Across the full value chain of our core businesses — petroleum, petrochemicals, and lubricants — GS Caltex is strengthening its fundamentals and profitability by transforming the way we work to drive sustainable innovation.",
             "deepTransformation.gx.title":
-              "Reducing Carbon in Existing Businesses and Developing New LowerBusinesses",
+              "Reducing Carbon in Existing Businesses and Developing New Lower-Carbon Businesses",
             "deepTransformation.gx.description":
-              "To stay ahead of the paradigm shift in the energy industry, GS Caltex is expanding new lower-carbon businesses such as hydrogen and CCUS, plastic recycling (MR/CR), carbonfree steam, and biofuels. Through these initiatives, we are building business portfolio for sustainable growth.",
+              "To stay ahead of the paradigm shift in the energy industry, GS Caltex is expanding new lower-carbon businesses such as hydrogen and CCUS, plastic recycling (MR/CR), carbon-free steam, and biofuels. Through these initiatives, we are building business portfolio for sustainable growth.",
             "deepTransformation.dax.title":
               "A Journey of Innovation Beyond Digital, Toward AI",
             "deepTransformation.dax.description":
@@ -151,13 +152,13 @@ document.addEventListener("DOMContentLoaded", function () {
             "gallery.item2": "View of Yeosu Plant No. 2",
             "gallery.item3": "Fueling Station of the Future",
             "gallery.item4": "VR/AR Safety Training",
-            "gallery.item5": "Plant Overview",
+            "gallery.item5": "Yeosu Complex",
             "gallery.item6": "Naegok Smart MFC",
             "gallery.item7": "Direct Liquid Cooling Fluid",
             "gallery.item8": "Bio Marine Fuel Supply",
             "gallery.item9": "GS Caltex Yeulmaru",
             "gallery.item10": "Energy Plus Hub, Dalmaji",
-            "gallery.item11": "Energy Plus, Seoul-ro",
+            "gallery.item11": "Energy Plus, Seoullo",
             "gallery.item12": "Energy Plus",
             "gallery.item13": "VR Safety Inspection Simulator",
             "gallery.item14": "Drone-Based Facility Inspection",
@@ -173,16 +174,16 @@ document.addEventListener("DOMContentLoaded", function () {
               "Commendation from the Ministry of Trade, Industry and Energy in the AI Autonomous Manufacturing category",
             "award.item5": "Mecenat Award, Presidential Commendation",
 
-            "awardNew.title": "New Award",
-            "awardNew.item1":
+            "merchandise.title": "CCUS Kit",
+            "merchandise.item1":
               "No. 1 in the New Energy sector of Korea’s Most Respected Companies survey",
-            "awardNew.item2":
+            "merchandise.item2":
               "No. 1 in the National Customer Satisfaction Index (NCSI), Gas Station category for 17 consecutive years (2009–2025)",
-            "awardNew.item3":
+            "merchandise.item3":
               "Six global design awards for the Energy Plus App",
-            "awardNew.item4":
+            "merchandise.item4":
               "Commendation from the Ministry of Trade, Industry and Energy in the AI Autonomous Manufacturing category",
-            "awardNew.item5": "Mecenat Award, Presidential Commendation",
+            "merchandise.item5": "Mecenat Award, Presidential Commendation",
 
             "history.title": "History",
             "history.item1":
@@ -201,7 +202,7 @@ document.addEventListener("DOMContentLoaded", function () {
             "history.item9": "Company renamed LG-Caltex Oil Corp.",
             "history.item10": "Company renamed GS Caltex Corp.",
             "history.item11":
-              "USD 25 Billion Export Tower Award (2 nd in Korea)",
+              "USD 25 Billion Export Tower Award (2nd in Korea)",
             "history.item12":
               "Declaration of vision: Value No. 1 Energy & Chemical Partner",
             "history.item13": "50th anniversary of GS Caltex",
