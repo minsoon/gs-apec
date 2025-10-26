@@ -71,6 +71,15 @@ document.addEventListener("DOMContentLoaded", function () {
             "award.item4": "산업통산자원부 AI 자율제조 부문 표창",
             "award.item5": "메세나대상, 대통령 표창",
 
+            "awardNew.title": "New Award",
+            "awardNew.item1":
+              "한국에서 가장 존경받는 기업조사 뉴에너지 부문 1위",
+            "awardNew.item2":
+              "국가고객만족도 17년 연속 주유소 부문 1위(2009~2025)",
+            "awardNew.item3": "에너지플러스앱 글로벌 디자인 어워드 6관왕 수상",
+            "awardNew.item4": "산업통산자원부 AI 자율제조 부문 표창",
+            "awardNew.item5": "메세나대상, 대통령 표창",
+
             "history.title": "History",
             "history.item1": "미국 칼텍스사와합작투자계약 체결",
             "history.item2": "호남정유주식회사 설립 등기",
@@ -163,6 +172,17 @@ document.addEventListener("DOMContentLoaded", function () {
             "award.item4":
               "Commendation from the Ministry of Trade, Industry and Energy in the AI Autonomous Manufacturing category",
             "award.item5": "Mecenat Award, Presidential Commendation",
+
+            "awardNew.title": "New Award",
+            "awardNew.item1":
+              "No. 1 in the New Energy sector of Korea’s Most Respected Companies survey",
+            "awardNew.item2":
+              "No. 1 in the National Customer Satisfaction Index (NCSI), Gas Station category for 17 consecutive years (2009–2025)",
+            "awardNew.item3":
+              "Six global design awards for the Energy Plus App",
+            "awardNew.item4":
+              "Commendation from the Ministry of Trade, Industry and Energy in the AI Autonomous Manufacturing category",
+            "awardNew.item5": "Mecenat Award, Presidential Commendation",
 
             "history.title": "History",
             "history.item1":
