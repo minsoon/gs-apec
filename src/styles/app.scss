@@ -648,6 +648,16 @@ $maxWidth: 1440px;
       }
     }
   }
+  .endingCon {
+    p {
+      padding: 0 20px;
+      width: 100%;
+      font-size: clamp(24px, 4vw, 28px);
+      font-weight: bold;
+      text-align: center;
+      word-break: keep-all;
+    }
+  }
 }
 
 .gallery-popup {

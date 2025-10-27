@@ -114,6 +114,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
             "ccus.content":
               "'가스로 배우는 탄소포집, CCUS KIT'는 탄소저감 교육을 위한 굿즈로 GS칼텍스의 저탄소 사업인 CCUS(탄소 포집·활용·저장)를 아이들이 쉽고 재미있게 이해할 수 있도록 만든 크리에이티브 놀이 키트입니다. 탄소 포집의 과정을 누구나 한 번쯤 해본 '방귀 잡기' 놀이에 빗대어, CCUS의 중요성을 즐겁게 놀면서 배울 수 있도록 구성되었습니다.",
+            "ending.title":
+              "GS칼텍스는 2025 APEC CEO SUMMIT의 성공적 개최를 기원합니다.",
           },
         },
         en: {
@@ -234,6 +236,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
             "ccus.content":
               "The CCUS Kit is an interactive learning kit designed to help children learn about carbon reduction. It offers a creative and easy way to understand CCUS (Carbon Capture, Utilization, and Storage), which is part of GS Caltex’s lower-carbon business. Inspired by a childhood game many Koreans grew up with, the kit makes it fun to learn about the importance of CCUS.",
+            "ending.title":
+              "GS Caltex proudly supports the success of the 2025 APEC CEO Summit.",
           },
         },
       },
