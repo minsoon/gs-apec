@@ -285,6 +285,12 @@
                     </div>
                   </div>
                 </div>
+                <button class="transformation-nav transformation-prev">
+                  <img src="./src/images/btn_left.png" alt="이전" />
+                </button>
+                <button class="transformation-nav transformation-next">
+                  <img src="./src/images/btn_right.png" alt="다음" />
+                </button>
               </div>
             </div>
           </div>
@@ -411,6 +417,12 @@
                   </dl>
                 </div>
               </div>
+              <button class="video-nav video-prev">
+                <img src="./src/images/btn_left.png" alt="이전" />
+              </button>
+              <button class="video-nav video-next">
+                <img src="./src/images/btn_right.png" alt="다음" />
+              </button>
             </div>
           </div>
         </div>
@@ -573,8 +585,21 @@
 
         <div class="panel" data-section-name="ending">
           <div class="endingCon">
-            <p data-i18n="ending.title">
-              GS칼텍스는 2025 APEC CEO SUMMIT의 성공적 개최를 기원합니다.
+            <div class="scrollIcon">
+              <img src="./src/images/ico_scroll.png" alt="scroll" />
+            </div>
+            <dl>
+              <dt data-i18n="ending.description"></dt>
+              <dd data-i18n="ending.content"></dd>
+            </dl>
+
+            <p>
+              <img
+                src="./src/images/img_gecaltex.png"
+                style="height: 30px"
+                alt="GS Caltex"
+              />
+              <img src="./src/images/img_apec.svg" alt="APEC" />
             </p>
           </div>
         </div>
@@ -617,6 +642,22 @@
         let transformationSwiper = null;
         let videoSwiper = null;
 
+        function updateTransformationNav() {
+          if (!transformationSwiper) return;
+
+          const isFirst = transformationSwiper.isBeginning;
+          const isLast = transformationSwiper.isEnd;
+          const prevBtn = document.querySelector(".transformation-prev");
+          const nextBtn = document.querySelector(".transformation-next");
+
+          if (prevBtn) {
+            prevBtn.style.display = isFirst ? "none" : "block";
+          }
+          if (nextBtn) {
+            nextBtn.style.display = isLast ? "none" : "block";
+          }
+        }
+
         function initTransformationSwiper() {
           if (transformationSwiper) {
             transformationSwiper.destroy(true, true);
@@ -628,6 +669,10 @@
             slidesPerView: 1,
             spaceBetween: 20,
             centeredSlides: true,
+            navigation: {
+              nextEl: ".transformation-next",
+              prevEl: ".transformation-prev",
+            },
             breakpoints: {
               320: { slidesPerView: 1.2, spaceBetween: 20 },
               768: { slidesPerView: 1.8, spaceBetween: 30 },
@@ -635,7 +680,7 @@
                 slidesPerView: 3,
                 spaceBetween: 18,
                 centeredSlides: false,
-                allowTouchMove: false,
+                allowTouchMove: true,
               },
             },
             keyboard: { enabled: true },
@@ -646,8 +691,36 @@
             },
             touchStartPreventDefault: true,
             touchMoveStopPropagation: true,
+            on: {
+              init: function () {
+                updateTransformationNav();
+              },
+              slideChange: function () {
+                updateTransformationNav();
+              },
+            },
           });
           transformationSwiper.mousewheel.disable();
+          // 초기 로드 시 버튼 상태 업데이트
+          setTimeout(function () {
+            updateTransformationNav();
+          }, 100);
+        }
+
+        function updateVideoNav() {
+          if (!videoSwiper) return;
+
+          const isFirst = videoSwiper.isBeginning;
+          const isLast = videoSwiper.isEnd;
+          const prevBtn = document.querySelector(".video-prev");
+          const nextBtn = document.querySelector(".video-next");
+
+          if (prevBtn) {
+            prevBtn.style.display = isFirst ? "none" : "block";
+          }
+          if (nextBtn) {
+            nextBtn.style.display = isLast ? "none" : "block";
+          }
         }
 
         function initVideoSwiper() {
@@ -670,6 +743,10 @@
                 slidesOffsetAfter: 0,
               },
             },
+            navigation: {
+              nextEl: ".video-next",
+              prevEl: ".video-prev",
+            },
             keyboard: { enabled: true },
             mousewheel: {
               forceToAxis: true, // 스와이퍼의 축(가로)에 맞는 휠만 반응
@@ -678,8 +755,20 @@
             },
             touchStartPreventDefault: true,
             touchMoveStopPropagation: true,
+            on: {
+              init: function () {
+                updateVideoNav();
+              },
+              slideChange: function () {
+                updateVideoNav();
+              },
+            },
           });
           videoSwiper.mousewheel.disable();
+          // 초기 로드 시 버튼 상태 업데이트
+          setTimeout(function () {
+            updateVideoNav();
+          }, 100);
         }
 
         function initSwipersWhenReady() {
