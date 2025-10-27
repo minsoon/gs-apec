@@ -1,6 +1,9 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
+  // 기본 경로 설정 (상대경로로 변경)
+  base: "./",
+
   // 개발 서버 설정
   server: {
     port: 3000,
