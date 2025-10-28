@@ -91,6 +91,12 @@ $maxWidth: 1440px;
       left: 0;
       width: 100%;
       text-align: center;
+      cursor: pointer;
+      transition: opacity 0.3s ease;
+
+      &:hover {
+        opacity: 0.7;
+      }
     }
   }
   .deepTransformationCon {
@@ -638,9 +644,6 @@ $maxWidth: 1440px;
     @media (max-width: 768px) {
       p {
         padding: 0 40px;
-        img {
-          width: 40%;
-        }
       }
       dl {
         padding-top: 20px;
@@ -656,7 +659,7 @@ $maxWidth: 1440px;
     position: relative;
     width: 100%;
     height: 100%;
-    background: #00a6ac;
+    background: #26cad0;
     .title {
       padding-top: 3vh;
       padding-bottom: 3vh;
@@ -681,7 +684,6 @@ $maxWidth: 1440px;
       dt {
         font-size: clamp(24px, 4vw, 28px);
         font-weight: bold;
-        color: #fff;
         margin-bottom: 15px;
         line-height: 1.4;
       }
@@ -723,6 +725,13 @@ $maxWidth: 1440px;
       left: 0;
       width: 100%;
       text-align: center;
+      cursor: pointer;
+      transition: opacity 0.3s ease;
+
+      &:hover {
+        opacity: 0.7;
+      }
+
       img {
         transform: rotate(180deg);
       }

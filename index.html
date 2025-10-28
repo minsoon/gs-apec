@@ -42,9 +42,13 @@
                 style="height: 30px"
                 alt="GS Caltex"
               />
-              <img src="./src/images/img_apec.svg" alt="APEC" />
+              <img
+                src="./src/images/img_apec.svg"
+                style="height: 27px"
+                alt="APEC"
+              />
             </p>
-            <div class="scrollIcon">
+            <div class="scrollIcon btmScrollIcon">
               <img src="./src/images/ico_scroll.png" alt="scroll" />
             </div>
           </div>
@@ -548,7 +552,7 @@
           <div class="merchandiseCon">
             <div class="title">Goods</div>
             <p>
-              <img src="./src/images/img_merchandise.svg" alt="merchandise" />
+              <img src="./src/images/img_merchandise.png" alt="merchandise" />
             </p>
             <dl>
               <dt data-i18n="merchandise.description">임직원 안전 피규어</dt>
@@ -567,7 +571,7 @@
           <div class="ccusCon">
             <div class="title">Goods</div>
             <p>
-              <img src="./src/images/img_ccus.svg" alt="ccus" />
+              <img src="./src/images/img_ccus.png" alt="ccus" />
             </p>
             <dl>
               <dt>CCUS Kit</dt>
@@ -585,7 +589,7 @@
 
         <div class="panel" data-section-name="ending">
           <div class="endingCon">
-            <div class="scrollIcon">
+            <div class="scrollIcon topScrollIcon">
               <img src="./src/images/ico_scroll.png" alt="scroll" />
             </div>
             <dl>
@@ -599,7 +603,11 @@
                 style="height: 30px"
                 alt="GS Caltex"
               />
-              <img src="./src/images/img_apec.svg" alt="APEC" />
+              <img
+                src="./src/images/img_apec.svg"
+                style="height: 27px"
+                alt="APEC"
+              />
             </p>
           </div>
         </div>
@@ -863,10 +871,25 @@
           );
         }
 
+        // 스크롤 아이콘 클릭 이벤트 추가
+        function bindScrollIconClick() {
+          $(".btmScrollIcon").on("click", function () {
+            // 마지막 섹션으로 이동
+            const totalSections = $(".panel").length;
+            $.scrollify.move(totalSections - 1);
+          });
+
+          $(".topScrollIcon").on("click", function () {
+            // 첫 번째 섹션으로 이동
+            $.scrollify.move(0);
+          });
+        }
+
         setTimeout(function () {
           initScrollify();
           initSwipersWhenReady();
           bindHistoryEdgeScroll();
+          bindScrollIconClick();
         }, 300);
 
         let resizeTimeout;
