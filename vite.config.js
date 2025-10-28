@@ -21,6 +21,15 @@ export default defineConfig({
       external: ["fsevents"],
       output: {
         manualChunks: undefined,
+        // 이미지 파일명에 해시값 추가하지 않음
+        assetFileNames: (assetInfo) => {
+          const info = assetInfo.name.split(".");
+          const ext = info[info.length - 1];
+          if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(ext)) {
+            return `assets/[name].[ext]`;
+          }
+          return `assets/[name]-[hash].[ext]`;
+        },
       },
     },
   },
